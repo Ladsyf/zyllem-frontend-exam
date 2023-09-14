@@ -1,0 +1,13 @@
+
+<div class="header">
+    <h1>
+      {{ article.title }}
+    </h1>
+    <span>
+      by: {{ article.author }},
+      {{ article.publishedAt | date }}
+    </span>
+    <div>
+        <a [href]="article.url" target="_blank">Click here for more details</a>
+    </div>
+</div>

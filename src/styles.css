@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.article-list-holder {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.article-item {
+    flex: 1;
+    background-color: rgb(240, 238, 238);
+    border-radius: .5rem;
+    padding: 1rem;
+    min-width: 15rem;
+    max-width: 500px;
+    cursor: pointer;
+}
+.article-detail > *,.article-detail {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+}
+button {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+@media screen and (max-width: 500px){
+    .article-list-holder {
+        flex-direction: column;
+    }
+}
+
